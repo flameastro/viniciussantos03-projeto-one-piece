@@ -120,7 +120,7 @@ main > article > ul {
 main img {
     display: block;
     margin: auto;
-    min-width: 100%;
+    max-width: 100%;
     border-radius: 10px;
 }
     
