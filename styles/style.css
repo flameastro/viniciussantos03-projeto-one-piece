@@ -1,5 +1,58 @@
 /* Variables */
 :root {
+    /* Neutral */
+    --neutral-50: #fafafa;
+    --neutral-100: #f4f4f5;
+    --neutral-200: #e4e4e7;
+    --neutral-300: #d4d4d8;
+    --neutral-400: #9f9fa9;
+    --neutral-500: #71717b;
+    --neutral-600: #52525c;
+    --neutral-700: #3f3f46;
+    --neutral-800: #27272a;
+    --neutral-900: #18181b;
+    --neutral-950: #09090b;
+
+    /* Blue */
+    --blue-50: #eff6ff;
+    --blue-100: #dbeafe;
+    --blue-200: #bedbff;
+    --blue-300: #8ec5ff;
+    --blue-400: #51a2ff;
+    --blue-500: #2b7fff;
+    --blue-600: #155dfb;
+    --blue-700: #1447e6;
+    --blue-800: #193cb8;
+    --blue-900: #1c398e;
+    --blue-950: #162556;
+
+    /* Red */
+    --red-50: #fef2f2;
+    --red-100: #ffe2e2;
+    --red-200: #ffc9c9;
+    --red-300: #ffa2a2;
+    --red-400: #ff6467;
+    --red-500: #fb2c36;
+    --red-600: #e7000b;
+    --red-700: #c10007;
+    --red-800: #9f0712;
+    --red-900: #82181a;
+    --red-950: #460809;
+
+    /* Yellow */
+    --yellow-50: #fffbeb;
+    --yellow-100: #fef3c6;
+    --yellow-200: #fee685;
+    --yellow-300: #ffd230;
+    --yellow-400: #ffb900;
+    --yellow-500: #fe9a00;
+    --yellow-600: #e17100;
+    --yellow-700: #bb4d00;
+    --yellow-800: #973c00;
+    --yellow-900: #7b3306;
+    --yellow-950: #461901;
+
+    /* Fonts */
     --lexend-font: "Lexend", sans-serif;
     --bricolage-grotesque-font: "Bricolage Grotesque", sans-serif;
     --space-grotesk-font: "Space Grotesk", sans-serif;
@@ -21,4 +74,42 @@
 
 body {
     scroll-behavior: smooth; /* Smooth Scroll */
+    font-family: var(--saira-font);
+}
+
+/* Header */
+.header {
+    background-color: var(--blue-950);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__logo {
+    width: 80vw;
+    margin: 10px;
+}
+
+.header__navbar {
+    text-align: center;
+    background-color: var(--yellow-400);
+    width: 100%;
+    padding: 10px;
+
+}
+
+.header__link {
+    font: bold 1.2em var(--outfit-font);
+    text-decoration: none;
+    color: var(--red-600);
+    width: 100vw;
+    padding: 5px 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.header__link:hover {
+    background-color: var(--red-500);
+    color: var(--yellow-50);
+    font-size: 1.35em;
+    border-radius: 12px;
 }
